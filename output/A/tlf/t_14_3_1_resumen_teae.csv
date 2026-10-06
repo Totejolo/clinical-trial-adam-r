@@ -1,0 +1,16 @@
+"fila","TRT01A","n"
+"Cualquier TEAE","Placebo",65
+"Cualquier TEAE","Xanomeline Low Dose",84
+"Cualquier TEAE","Xanomeline High Dose",68
+"TEAE grave","Placebo",0
+"TEAE grave","Xanomeline Low Dose",2
+"TEAE grave","Xanomeline High Dose",1
+"TEAE relacionado (posible o probable)","Placebo",43
+"TEAE relacionado (posible o probable)","Xanomeline Low Dose",77
+"TEAE relacionado (posible o probable)","Xanomeline High Dose",64
+"TEAE mortal","Placebo",2
+"TEAE mortal","Xanomeline Low Dose",1
+"TEAE mortal","Xanomeline High Dose",0
+"Interrupción del estudio por evento adverso","Placebo",8
+"Interrupción del estudio por evento adverso","Xanomeline Low Dose",49
+"Interrupción del estudio por evento adverso","Xanomeline High Dose",35

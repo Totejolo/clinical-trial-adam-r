@@ -1,0 +1,58 @@
+dataset,variable,label,type,length,order,derivation
+ADSL,STUDYID,Study Identifier,text,12,1,DM.STUDYID
+ADSL,USUBJID,Unique Subject Identifier,text,11,2,DM.USUBJID
+ADSL,SUBJID,Subject Identifier for the Study,text,4,3,DM.SUBJID
+ADSL,SITEID,Study Site Identifier,text,3,4,DM.SITEID
+ADSL,AGE,Age,integer,8,5,DM.AGE
+ADSL,AGEU,Age Units,text,5,6,DM.AGEU
+ADSL,AGEGR1,Pooled Age Group 1,text,5,7,"18-64 if AGE<=64; >64 if AGE>64"
+ADSL,SEX,Sex,text,1,8,DM.SEX
+ADSL,RACE,Race,text,32,9,DM.RACE
+ADSL,ARM,Description of Planned Arm,text,20,10,DM.ARM
+ADSL,ACTARM,Description of Actual Arm,text,20,11,DM.ACTARM
+ADSL,TRT01P,Planned Treatment for Period 01,text,20,12,DM.ARM
+ADSL,TRT01PN,Planned Treatment for Period 01 (N),integer,8,13,"Placebo=0; Xanomeline Low Dose=54; Xanomeline High Dose=81; Screen Failure=missing"
+ADSL,TRT01A,Actual Treatment for Period 01,text,20,14,DM.ACTARM
+ADSL,TRT01AN,Actual Treatment for Period 01 (N),integer,8,15,"Placebo=0; Xanomeline Low Dose=54; Xanomeline High Dose=81; Screen Failure=missing"
+ADSL,TRTSDT,Date of First Exposure to Treatment,date,8,16,"Earliest EX start date (EXSTDTC) with EXDOSE>0 or placebo; no date imputation"
+ADSL,TRTEDT,Date of Last Exposure to Treatment,date,8,17,"Latest EX end date (EXENDTC) with EXDOSE>0 or placebo; no date imputation"
+ADSL,LSTEXDT,Last Known Date on Treatment,date,8,18,"TRTEDT if present; otherwise latest EX start date with EXDOSE>0 or placebo"
+ADSL,TRTDURD,Total Treatment Duration (Days),integer,8,19,TRTEDT-TRTSDT+1
+ADSL,SAFFL,Safety Population Flag,text,1,20,"Y if any EX record with EXDOSE>0 or placebo; else N"
+ADSL,EOSSTT,End of Study Status,text,12,21,"DS disposition event: COMPLETED; SCREEN FAILURE=missing; other=DISCONTINUED; none=ONGOING"
+ADSL,EOSDT,End of Study Date,date,8,22,"DS disposition event start date (DSSTDTC), excluding SCREEN FAILURE"
+ADSL,DCSREAS,Reason for Discontinuation from Study,text,30,23,"DS.DSDECOD of disposition event when not COMPLETED or SCREEN FAILURE"
+ADSL,RANDDT,Date of Randomization,date,8,24,DS.DSSTDTC where DSDECOD=RANDOMIZED
+ADAE,STUDYID,Study Identifier,text,12,1,AE.STUDYID
+ADAE,USUBJID,Unique Subject Identifier,text,11,2,AE.USUBJID
+ADAE,AESEQ,Sequence Number,integer,8,3,AE.AESEQ
+ADAE,AEDECOD,Dictionary-Derived Term,text,50,4,AE.AEDECOD
+ADAE,AEBODSYS,Body System or Organ Class,text,67,5,AE.AEBODSYS
+ADAE,AESER,Serious Event,text,1,6,AE.AESER
+ADAE,AEREL,Causality,text,8,7,AE.AEREL
+ADAE,AEOUT,Outcome of Adverse Event,text,32,8,AE.AEOUT
+ADAE,AEACN,Action Taken with Study Treatment,text,16,9,AE.AEACN
+ADAE,ASTDT,Analysis Start Date,date,8,10,"AESTDTC; missing day->1, missing month->January, not before TRTSDT if same month and year"
+ADAE,ASTDTF,Analysis Start Date Imputation Flag,text,1,11,"D if day imputed; M if month and day imputed"
+ADAE,AENDT,Analysis End Date,date,8,12,"AEENDTC; missing day->last day of month, missing month->December"
+ADAE,TRT01A,Actual Treatment for Period 01,text,20,13,ADSL.TRT01A
+ADAE,TRT01AN,Actual Treatment for Period 01 (N),integer,8,14,ADSL.TRT01AN
+ADAE,TRTEMFL,Treatment Emergent Analysis Flag,text,1,15,"Y if TRTSDT<=ASTDT<=TRTEDT+30"
+ADAE,ONTRTFL,On Treatment Record Flag,text,1,16,"Y if TRTSDT<=ASTDT<=LSTEXDT"
+ADAE,DERMFL,Dermatologic Event Flag,text,1,17,"Y if AEBODSYS=SKIN AND SUBCUTANEOUS TISSUE DISORDERS or AEDECOD starts with APPLICATION SITE"
+ADTTE,STUDYID,Study Identifier,text,12,1,ADSL.STUDYID
+ADTTE,USUBJID,Unique Subject Identifier,text,11,2,ADSL.USUBJID
+ADTTE,PARAMCD,Parameter Code,text,8,3,"TTDE (primary); TTDE30 (S1); TTDESOC (S2); TTDEIMPL (S4); TTDEEOS (S5)"
+ADTTE,PARAM,Parameter,text,80,4,"v1.1 literal: TTDE=Tiempo hasta el primer EA dermatologico en tratamiento (dias); TTDE30=Tiempo hasta el primer EA dermatologico, ventana TEAE +30 dias (dias); TTDESOC=Tiempo hasta el primer EA de piel, solo SOC (dias); TTDEIMPL=Tiempo hasta el primer EA dermatologico, imputacion al ultimo dia (dias); TTDEEOS=Tiempo hasta el primer EA dermatologico, sin TRTEDT censura en EOSDT (dias)"
+ADTTE,STARTDT,Time to Event Origin Date for Subject,date,8,5,ADSL.TRTSDT
+ADTTE,ADT,Analysis Date,date,8,6,"Event date or censoring date per SAP section 4"
+ADTTE,AVAL,Analysis Value,float,8,7,ADT-STARTDT+1 (days)
+ADTTE,CNSR,Censor,integer,8,8,"0=event; 1=censored"
+ADTTE,EVNTDESC,Event or Censoring Description,text,40,9,"v1.1: events = PRIMER EVENTO DERMATOLOGICO; censored = 'CENSURA: ' followed by CNSDTDSC"
+ADTTE,CNSDTDSC,Censor Date Description,text,40,10,"TRATAMIENTO COMPLETADO; INTERRUPCION POR EA; OTRA INTERRUPCION (missing if event)"
+ADTTE,SRCDOM,Source Data,text,8,11,ADAE for events; ADSL for censoring
+ADTTE,SRCVAR,Source Variable,text,8,12,"v1.1: events = ASTDT (ASTLDT for TTDEIMPL); censored = EOSDT if the censoring date came from EOSDT, otherwise TRTEDT if TRTEDT is present, otherwise LSTEXDT"
+ADTTE,SRCSEQ,Source Sequence Number,integer,8,13,AESEQ of the event record
+ADTTE,TRT01A,Actual Treatment for Period 01,text,20,14,ADSL.TRT01A
+ADTTE,TRT01AN,Actual Treatment for Period 01 (N),integer,8,15,ADSL.TRT01AN
+ADTTE,AGE,Age,integer,8,16,ADSL.AGE

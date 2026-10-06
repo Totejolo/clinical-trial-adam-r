@@ -1,0 +1,14 @@
+# Internal working notes, not part of the public project
+GUIA.md
+codex_encargo.md
+codex_articulo.md
+CODEX_REVISION.md
+codex_ultimo_mensaje.md
+qc/*ultimo_mensaje*.md
+qc/output/ejecucion_qc.log
+
+# R session files
+.Rhistory
+.RData
+.Rproj.user/
+Rplots.pdf

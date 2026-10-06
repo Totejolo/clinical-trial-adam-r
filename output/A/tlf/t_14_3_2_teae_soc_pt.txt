@@ -1,0 +1,47 @@
+T-14.3.2 TEAE por órgano-sistema y término preferente (≥ 5 % en algún brazo)
+
+————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+Órgano-sistema                                          Placebo     Xanomeline Low Dose   Xanomeline High Dose      Total   
+————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+Sujetos con al menos un TEAE                           65 (75.6%)       84 (87.5%)             68 (94.4%)        217 (85.4%)
+GENERAL DISORDERS AND ADMINISTRATION SITE CONDITIONS                                                                        
+  Sujetos con al menos un evento                       21 (24.4%)       51 (53.1%)             36 (50.0%)        108 (42.5%)
+    APPLICATION SITE DERMATITIS                         5 (5.8%)         9 (9.4%)               7 (9.7%)          21 (8.3%) 
+    APPLICATION SITE ERYTHEMA                           3 (3.5%)        13 (13.5%)             14 (19.4%)        30 (11.8%) 
+    APPLICATION SITE IRRITATION                         3 (3.5%)         9 (9.4%)              9 (12.5%)          21 (8.3%) 
+    APPLICATION SITE PRURITUS                           6 (7.0%)        23 (24.0%)             21 (29.2%)        50 (19.7%) 
+    APPLICATION SITE VESICLES                           1 (1.2%)         5 (5.2%)               5 (6.9%)          11 (4.3%) 
+    FATIGUE                                             1 (1.2%)         5 (5.2%)               5 (6.9%)          11 (4.3%) 
+SKIN AND SUBCUTANEOUS TISSUE DISORDERS                                                                                      
+  Sujetos con al menos un evento                       20 (23.3%)       39 (40.6%)             39 (54.2%)        98 (38.6%) 
+    BLISTER                                                0             5 (5.2%)               1 (1.4%)          6 (2.4%)  
+    ERYTHEMA                                            8 (9.3%)        14 (14.6%)             14 (19.4%)        36 (14.2%) 
+    HYPERHIDROSIS                                       2 (2.3%)         4 (4.2%)              8 (11.1%)          14 (5.5%) 
+    PRURITUS                                            8 (9.3%)        21 (21.9%)             25 (34.7%)        54 (21.3%) 
+    RASH                                                5 (5.8%)        13 (13.5%)             8 (11.1%)         26 (10.2%) 
+    SKIN IRRITATION                                     3 (3.5%)         6 (6.2%)               5 (6.9%)          14 (5.5%) 
+NERVOUS SYSTEM DISORDERS                                                                                                    
+  Sujetos con al menos un evento                        8 (9.3%)        22 (22.9%)             23 (31.9%)        53 (20.9%) 
+    DIZZINESS                                           2 (2.3%)         9 (9.4%)              10 (13.9%)         21 (8.3%) 
+    HEADACHE                                            3 (3.5%)         3 (3.1%)               5 (6.9%)          11 (4.3%) 
+    SYNCOPE                                                0             5 (5.2%)               2 (2.8%)          7 (2.8%)  
+GASTROINTESTINAL DISORDERS                                                                                                  
+  Sujetos con al menos un evento                       17 (19.8%)       15 (15.6%)             19 (26.4%)        51 (20.1%) 
+    DIARRHOEA                                          9 (10.5%)         5 (5.2%)               3 (4.2%)          17 (6.7%) 
+    NAUSEA                                              3 (3.5%)         3 (3.1%)               6 (8.3%)          12 (4.7%) 
+    SALIVARY HYPERSECRETION                                0                 0                  4 (5.6%)          4 (1.6%)  
+    VOMITING                                            3 (3.5%)         4 (4.2%)               6 (8.3%)          13 (5.1%) 
+CARDIAC DISORDERS                                                                                                           
+  Sujetos con al menos un evento                       12 (14.0%)       14 (14.6%)             14 (19.4%)        40 (15.7%) 
+    MYOCARDIAL INFARCTION                               4 (4.7%)         2 (2.1%)               4 (5.6%)          10 (3.9%) 
+    SINUS BRADYCARDIA                                   2 (2.3%)         7 (7.3%)              8 (11.1%)          17 (6.7%) 
+INFECTIONS AND INFESTATIONS                                                                                                 
+  Sujetos con al menos un evento                       16 (18.6%)        9 (9.4%)              13 (18.1%)        38 (15.0%) 
+    NASOPHARYNGITIS                                     2 (2.3%)         4 (4.2%)               6 (8.3%)          12 (4.7%) 
+    UPPER RESPIRATORY TRACT INFECTION                   6 (7.0%)         1 (1.0%)               3 (4.2%)          10 (3.9%) 
+RESPIRATORY, THORACIC AND MEDIASTINAL DISORDERS                                                                             
+  Sujetos con al menos un evento                        8 (9.3%)         9 (9.4%)              10 (13.9%)        27 (10.6%) 
+    COUGH                                               1 (1.2%)         5 (5.2%)               5 (6.9%)          11 (4.3%) 
+————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+
+Un sujeto se cuenta una vez por término. TEAE: inicio entre la primera dosis y 30 días tras la última.
